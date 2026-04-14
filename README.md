@@ -34,8 +34,14 @@ The rest of the programs have to be installed independently
 **Dorado**
 [Install-dorado](https://github.com/nanoporetech/dorado)
 
+
+
+
+
 Then you are ready to start working!
-2\. Process data
+
+
+
 ## Assembly and its validation commands:
 
 ``` bash
