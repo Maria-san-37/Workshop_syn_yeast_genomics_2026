@@ -39,10 +39,12 @@ The rest of the programs have to be installed independently
 
 
 Then you are ready to start working!
+[Assembly and quality check](#Assembly-and-quality-check)
+[BASIC USAGE](#basic-usage)
+[SNAKEMAKE tool](#SNAKEMAKE-tool)
 
 
-
-## Assembly and its validation commands:
+## Assembly and quality check:
 
 ``` bash
 flye --nano-raw barcode01.fastq --out-dir barcode01_flye
@@ -61,7 +63,7 @@ quast.py -o quast_result_ID -r . {Reference.fasta} {genome.fasta}
 ```
 
 
-
+## SNAKEMAKE tool:
 Optional
 3\. Run analysis with Snakemake which allow you to process multiple files at once!
 
