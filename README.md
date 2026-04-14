@@ -82,3 +82,5 @@ cd project
 
 bash scripts/download.sh
 ```
+Other useful bash scripts for processing data
+[More_scripts] (https://github.com/Maria-san-37/Scripts_metagenomics/tree/main)
