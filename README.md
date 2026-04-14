@@ -35,15 +35,29 @@ The rest of the programs have to be installed independently
 [Install-dorado](https://github.com/nanoporetech/dorado)
 
 Then you are ready to start working!
-
-
 2\. Process data
+## Assembly and its validation commands:
+
+``` bash
+flye --nano-raw barcode01.fastq --out-dir barcode01_flye
+
+ragtag.py correct {Reference.fasta} barcode01_flye/assembly.fasta -o assembly_ragtag_correct.fasta
+ 
+ragtag scaffold {Reference.fasta} assembly_ragtag_correct.fasta -o assembly_ragtag_scaffold.fasta
+
+ragtag.py patch {Reference.fasta} assembly_ragtag_scaffold.fasta -o assembly_ragtag_patch.fasta
+
+```
+Quality assement of the assembly:
+
+``` bash
+quast.py -o quast_result_ID -r . {Reference.fasta} {genome.fasta}
+```
 
 
 
-3\. Run analysis
-
-3.1\. Run analysis with Snakemake which allow you to process multiple files at once!
+Optional
+3\. Run analysis with Snakemake which allow you to process multiple files at once!
 
 ## 🐍 Run Workflow
 
