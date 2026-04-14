@@ -1,20 +1,12 @@
-\# Yeast-Syn-Genomes Workshop
+# Yeast-Syn-Genomes Workshop
 
+## Overview
 
-
-\## Overview
-
-This mini-workshop intents to show the participants common steps in the analysis of yeast chromosomes, with an specific focus in SCRaMblEd genomes to identify and characterize Structural Variants (SV's).
-
-
+This mini-workshop intents to show the participants common steps in the analysis of yeast chromosomes, with an specific focus in SCRaMblEd genomes to identify and characterize Structural Variants (SV's)
 
 The intention of this workflow is showing tools that can be easily transferable to related projects and other genomes.
 
-
-
-
-
-\## Workflow
+## Workflow
 
 1\. Setup environment using docker images and the following programs have to be installed:
 
