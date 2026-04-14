@@ -11,7 +11,7 @@ Additionally this workshop shows common usage of tools that can be easily transf
 
 1\. Setup the environment using a docker image and the install the following programs-
 
-* Installation of conda or miniconda
+* Installation of conda or miniconda in your local computer
 
 ## 🐳 Run with Docker
 
@@ -23,7 +23,7 @@ docker build -t yeast-genomics:latest .
 
 docker run -it --rm -v $(pwd):/data yeast-genomics:latest
 
-conda activate yeast\_env
+conda activate yeast_env
 
 ```
 The rest of the programs have to be installed independently
@@ -34,20 +34,25 @@ The rest of the programs have to be installed independently
 **Dorado**
 [Install-dorado](https://github.com/nanoporetech/dorado)
 
-Then you are ready to Process your data and start working!
+Then you are ready to start working!
 
 
-3\. Process data
-
-
-
-4\. Run analysis
+2\. Process data
 
 
 
-\## Quick Start
+3\. Run analysis
 
+3.1\. Run analysis with Snakemake which allow you to process multiple files at once!
 
+## 🐍 Run Workflow
+
+Install Snakemake:
+
+```bash
+snakemake --cores 4 --use-docker -p
+
+```
 
 ```bash
 
@@ -56,4 +61,4 @@ git clone https://github.com/yourname/project.git
 cd project
 
 bash scripts/download.sh
-
+```
