@@ -31,6 +31,8 @@ The rest of the programs have to be installed independently
 **Fasterq-dump**
 [Install-fasterq-dump](https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit)
 
+You can use the following [script](https://github.com/Maria-san-37/Scripts_metagenomics/blob/main/fasterq_dump.sh)
+
 **Dorado**
 [Install-dorado](https://github.com/nanoporetech/dorado)
 
@@ -39,9 +41,7 @@ The rest of the programs have to be installed independently
 
 
 Then you are ready to start working!
-[Assembly and quality check](#Assembly-and-quality-check)
-[BASIC USAGE](#basic-usage)
-[SNAKEMAKE tool](#SNAKEMAKE-tool)
+
 
 
 ## Assembly and quality check:
