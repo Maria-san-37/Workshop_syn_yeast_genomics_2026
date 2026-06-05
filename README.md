@@ -73,6 +73,8 @@ Install Snakemake:
 
 ```bash
 snakemake --cores 4 --use-docker -p
+# When running assemblies:
+snakemake --cores 4 --jobs 1 --resources mem_mb=32000
 
 ```
 
